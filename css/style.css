@@ -1,448 +1,305 @@
-@import url('https://fonts.googleapis.com/css?family=Acme|Berkshire+Swash|Rasa&display=swap');
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container {
-    width: 100%;
-    background-color: rgb(201, 248, 170);
-    font-family: 'Rasa', serif;
-}
-
-header {
-    background-color: rgb(245, 228, 212);
-    position: fixed;
-    top: 0;
-    z-index: 5;
-}
-
-header a,
-.latest-one div h2 a,
-.more a,
-.latest-all .card h3 a,
-.button,
-.selected .card h3 a,
-.featured .card h3 a,
-.subcontent .editor .card h3 a,
-footer ul li a {
-    text-decoration: none;
-}
-
-.logo,
-nav ul,
-.social,
-.social .cred,
-.latest-one,
-.latest-all,
-#subscribe,
-.selected,
-.featured,
-.subcontent,
-.subcontent .magazine .mag-one,
-.subcontent .editor .editor-card,
-footer {
-    display: grid;
-}
-
-.figure{
-    overflow: hidden;
-    transition: 0.5s;
-}
-.figure img{
-    transition: 0.5s;
-}
-.figure:hover img{
-    transform: scale(1.3);
-}
-
-.logo {
-    grid-template-columns: 1fr 5fr;
-    grid-auto-rows: 100px;
-    align-items: center;
-}
-
-.logo img {
-    width: 90%;
-    grid-column: 1/2;
-    border-radius: 15px 30px;
-    padding: 3%;
-}
-
-nav ul {
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    list-style-type: none;
-}
-
-nav ul li a,
-.social .cred a,
-.more,
-.more a,
-.selected .card .selected-by {
-    color: rgb(8, 99, 13);
-}
-
-nav ul li a {
-    font-family: 'Acme', sans-serif;
-    font-size: 2rem;
-    transition: linear 1s;
-}
-
-.social .magaz,
-#subscribe,
-.button,
-footer {
-    background-color: rgb(153, 48, 80);
-}
-
-nav ul li a:hover {
-    color: rgb(75, 4, 13);
-    text-decoration: underline;
-}
-
-.social {
-    background-color: rgb(189, 144, 144);
-    grid-template-columns: repeat(7, 1fr);
-    grid-auto-rows: 50px;
-    align-items: center;
-}
-
-.social .soc {
-    grid-column: 2/3;
-}
-
-.social .soc img {
-    width: 30px;
-    margin-right: 5px;
-    border-radius: 10px;
-    opacity: .7;
-    overflow: hidden;
-    transition: linear 0.5s;
-}
-
-.social .soc img:hover {
-    transform: scale(1.2);
-    opacity: 1;
-}
-
-.social .magaz {
-    grid-column: 4/5;
-    text-align: center;
-    font-weight: bold;
-}
-
-.social .magaz a {
-    color: #fff;
-}
-
-.social .magaz a:hover,
-.social .cred a:hover,
-.latest-one div h2 a:hover,
-.more a:hover,
-.latest-all .card h3 a:hover,
-.selected .card h3 a:hover,
-.featured .card h3 a:hover,
-.subcontent .editor .card h3 a:hover,
-footer ul li a:hover {
-    text-decoration: underline;
-}
-
-.social .cred {
-    grid-column: 5/6;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-items: end;
-}
-
-.social .cred img {
-    width: 30px;
-    margin-right: 5px;
-    border-radius: 50%;
-}
-
-.social .cred a {
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.social .cred a:hover {
-    color: rgb(1, 24, 2);
-}
-
-main {
-    background-color: rgb(241, 219, 219);
-}
-
-#latest {
     width: 80%;
     margin: 0 auto;
-    background-color: #fff;
-    padding: 1%;
-    padding-top: 200px;
-    padding-bottom: 100px;
-    margin-bottom: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(194, 244, 253);
+    font-family: 'Playfair Display', serif;
 }
 
-.latest-one {
-    grid-template-columns: 3fr 2fr;
-    margin-bottom: 50px;
+h1 {
+    color: rgb(2, 2, 88);
+    text-shadow: 2px 2px 0 #fcfdfd, 4px 4px 0 #9c9c9c, 2px 2px 4px rgba(1, 3, 6, 0);
+    font-size: 3rem;
 }
 
-.latest-one img {
-    width: 90%;
-    grid-column: 1/2;
-    
+h2 {
+    color: rgb(2, 2, 120);
+    text-shadow: 1px 3px 1px #7bd7ee;
+    text-transform: uppercase;
 }
 
-.latest-one div h2 a,
-.latest-all h2,
-.latest-all .card h3 a,
-.selected h2,
-.selected h2 a,
-.selected .card h3 a,
-.featured h2,
-.featured .card h3 a,
-.subcontent .magazine h2,
-.subcontent .magazine h3,
-.subcontent .editor h2,
-.subcontent .editor .card h3 a {
-    font-family: 'Berkshire Swash', cursive;
-    color: rgb(153, 48, 80);
+h3 {
+    color: rgb(2, 2, 150);
+    text-transform: uppercase;
 }
 
-.latest-one div h2 a{
-    font-size: 2rem;
+h4 {
+    color: rgb(2, 2, 200);
 }
 
-.latest-one div p {
-    font-size: 1.2rem;
+img {
+    width: 50px;
 }
 
-.more,
-.more a {
-    font-weight: bold;
-    padding: 1%;
+time {
+    font-size: .7rem;
+    color: rgb(59, 50, 122);
 }
 
-hr {
-    background-color: rgb(8, 99, 13);
-}
-
-.latest-all {
-    height: auto;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2%;
-}
-
-.latest-all h2,
-.selected h2,
-.featured h2{
-    grid-column: span 3;
-}
-
-.latest-all .card,
-.selected .card,
-.featured .card,
-.subcontent .magazine,
-.subcontent .magazine .mag-one img,
-.subcontent .editor .card,
-footer ul {
-    grid-column: span 1;
-}
-
-.latest-all .card img {
-    width: 100%;
-    height: 250px;
-}
-
-#subscribe {
-    width: 100%;
-    min-height: 300px;
-    color: #fff;
-    text-align: center;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    padding-bottom: 30px;
+p {
+    text-indent: 3%;
 }
 
 blockquote {
-    font-family: 'Berkshire Swash', cursive;
-    font-size: 4rem;
-    font-style: italic;
-    grid-column: 1/-1;
-    padding: 1% 5%;
+    border-left: 2px solid #000;
+    padding: 1%;
+    margin: 3%;
+    box-shadow: 0px 0px 3px 0px #000;
+    background-color: rgb(178, 197, 209);
 }
 
-cite {
-    font-size: 3rem;
-    align-self: start;
-    justify-self: end;
-    padding-right: 20%;
-    padding-bottom: 20px;
+blockquote>footer {
+    padding-top: 1%;
+    text-align: right;
 }
 
-.button {
-    width: 40%;
-    border: 3px solid #fff;
-    transition: all linear 1s;
-    font-size: 2rem;
-    line-height: 3rem;
-    color: #fff;
-}
-
-.button:hover {
-    background-color: #fff;
-    color: rgb(153, 48, 80);
-}
-
-#selected {
-    width: 80%;
+figure {
     margin: 0 auto;
-    background-color: #fff;
+    box-shadow: 0px 0px 13px 0px #000;
+    width: 90%;
+    overflow: hidden;
+}
+
+figure>img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+figure>figcaption {
+    color: gray;
     padding: 1%;
 }
 
-
-.selected {
-    margin-bottom: 50px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2%;
+figure:hover img {
+    transform: scale(1.3);
 }
 
-.selected h2 img {
-    width: 5%;
+.clear {
+    clear: both;
 }
 
-.selected h2 a {
-    font-size: 1rem;
+ul {
+    list-style-type: none;
 }
 
-.selected .card {
-    background-color: rgb(199, 245, 161);
-
+a,
+ul li a {
+    text-decoration: none;
+    color: rgb(28, 4, 66);
+    transition: linear .7s;
 }
 
-.selected .card img,
-.featured .card img,
-.subcontent .magazine .mag-one img,
-.subcontent .editor .card img {
-    width: 100%;
+a:hover,
+ul li a:hover {
+    text-decoration: underline;
+    color: #fff;
 }
 
-.selected .card p,
-.selected .card h3 a {
-    padding: 2%;
+ul li:hover {
+    background-color: rgb(84, 96, 209);
 }
 
-.selected .card .selected-by img {
-    width: 10%;
+#mainHeader {
+    min-height: 150px;
+    background-color: rgb(129, 138, 252);
+    box-shadow: 1px 6px 13px 0px #000000;
 }
 
-
-.featured {
-    margin-bottom: 50px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2%;
+#mainHeader>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.subcontent {
-    margin-top: 50px;
-    grid-template-columns: 1fr 2fr;
-    gap: 2%;
-    justify-content: center;
+#mainHeader img {
+    width: 20%;
+    border-radius: 15em;
 }
 
-.subcontent .magazine {
-    background-color: rgb(226, 223, 223);
-    padding: 2%;
+#mainHeader nav ul {
+    display: flex;
+    justify-content: space-around;
     padding-bottom: 10px;
-    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-.subcontent .magazine h2,
-.subcontent .magazine h3,
-.subcontent .editor h2 {
-    padding-left: 5%;
+#mainHeader nav ul li a {
+    text-shadow: 1px 1px 1px #f6fafc;
+    transition: linear .7s;
 }
 
-.subcontent .magazine .button {
-    grid-column: 1/-1;
-    width: 80%;
-    margin: 0 auto;
+#mainHeader nav ul li a:hover {
+    color: #fff;
+    text-shadow: 1px 1px 1px #2e2f30;
+}
+
+#mainContainer {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 2%;
+    box-shadow: 1px 6px 13px 0px #000000;
+}
+
+#newsReview {
+    flex: 2 1 80%;
+}
+
+#newsReview>header h2 {
     text-align: center;
 }
 
-.subcontent .magazine .mag-one {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2%;
-    padding-bottom: 10px;
-}
-
-.subcontent .editor {
-    grid-column: 2/-1;
-    background-color: rgb(206, 236, 248);
-}
-
-.subcontent .editor .editor-card {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.subcontent .editor .card {
-    padding: 5%;
-}
-
-.subcontent .editor .card:first-child {
-    border-right: #fff dotted 4px;
-}
-
-footer {
+#newsReview>header img {
     width: 100%;
-    grid-template-columns: repeat(7, 1fr);
-    color: #fff;
-    padding-top: 50px;
-    padding-bottom: 10px;
 }
 
-footer ul {
-    list-style-type: none;
+#newsReview>article {
+    padding: 5%;
+    border-bottom: gray 2px dashed;
+}
+
+#newsReview>article header {
+    text-align: center;
+}
+
+img[title="delta-nila"] {
+    float: left;
+    margin-right: 5%;
+    width: 50%;
+    box-shadow: 0px 0px 5px 0px #000;
+}
+
+img[title="atlantida-today"] {
+    float: right;
+    margin-left: 5%;
+    width: 60%;
+    box-shadow: 0px 0px 5px 0px #000;
+}
+
+img[title="atlantida_early"] {
+    float: right;
+    margin-left: 5%;
+    width: 60%;
+    box-shadow: 0px 0px 5px 0px #000;
+}
+
+#otherReview {
+    flex: 1 2 20%;
+    margin-left: 2%;
+}
+
+#otherReview>h2 {
+    text-align: right;
+}
+
+#otherReview>nav {
+    background-color: rgb(203, 222, 235);
+    border-radius: 15px;
+}
+
+#otherReview>nav ul,
+#otherReview>aside ul {
     padding-left: 0;
 }
 
-footer ul li a {
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin: 5%;
+#otherReview>nav ul li::before {
+    content: "\06E9  ";
 }
 
-footer .foot-soc {
-    grid-column: span;
-    justify-self: end;
+#otherReview>nav ul li {
+    border: 2px solid gray;
+    border-radius: 15px 10%;
+    padding: 1em;
+    transition: linear .5s;
 }
 
-footer .foot-soc img {
-    width: 15%;
+#otherReview>nav ul li:hover {
+    box-shadow: 0px 0px 5px 0px #000;
+}
+
+#otherReview>aside {
+    border: gray 2px double;
+    background-color: rgb(201, 222, 235);
+    margin-top: 20px;
+}
+
+#otherReview>aside>h3 {
+    text-align: center;
+}
+
+#otherReview>aside ul {
     padding: 5%;
-    border-radius: 50%;
-    transition: all linear .7s;
 }
 
-footer .foot-soc img:hover {
-    transform: scale(0.8, 0.8);
+#otherReview>aside ul li::before {
+    content: "\205B  ";
 }
 
-footer .foot-form {
-    justify-self: start;
-    padding-right: 2%;
+#otherReview>aside ul li {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-bottom: 3px dashed gray;
 }
 
-footer .foot-form .button {
-    font-size: 1.5rem;
-    padding: 2%;
+#otherReview>aside ul li a {
+    text-transform: lowercase;
 }
 
-footer .foot-foot {
-    grid-column: 2/-2;
+#otherReview>aside .galery {
+    overflow: hidden;
+}
+
+#otherReview>aside .galery img {
+    width: 100%;
+    margin: 8px auto;
+}
+
+#otherReview>aside .galery:hover img {
+    transform: scale(1.3);
+
+}
+
+#pageFooter {
+    display: flex;
+    min-height: 150px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 6px 13px 0px #000000;
+    margin-top: 20px;
+    padding: 1%;
+    background-color: rgb(189, 189, 194);
+    color: #fff;
+}
+
+#pageFooter .topLink {
+    position: fixed;
+    bottom: 0;
+    right: 2%;
+    border-radius: 5px;
+    background-color: rgb(143, 163, 252);
+    box-shadow: 1px 6px 13px 0px #000000;
+    padding: 1% 2%;
+    transition: linear .7s;
+}
+
+#pageFooter .topLink:hover {
+    background-color: rgb(45, 34, 141);
+}
+
+#pageFooter .centralCol {
+    flex: 2 1 40%;
+}
+
+#pageFooter .leftCol {
+    flex: 1 2 30%;
+}
+
+#pageFooter .righttCol {
+    flex: 1 2 30%;
 }
